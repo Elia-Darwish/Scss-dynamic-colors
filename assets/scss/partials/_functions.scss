@@ -1,0 +1,16 @@
+@function set-link-hover-color($color) {
+    @if ( (lightness($color) > 75 and saturation($color) < 50) or (lightness($color) > 75 and saturation($color) > 50) ) {
+      @return darken($color, 50%); 
+    } @else {
+      @return lighten($color, 50%); 
+    }
+}
+
+
+@function set-link-hover-background($color) {
+  @if ( (lightness($color) > 75 and saturation($color) < 50) or (lightness($color) > 75 and saturation($color) > 50) ) {
+    @return lighten($color, 5%); 
+  } @else {
+    @return darken($color, 20%); 
+  }
+}

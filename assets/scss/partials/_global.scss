@@ -1,0 +1,23 @@
+header, main, footer {
+    height: 100px;
+    padding: 2rem;
+}
+
+
+
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+
+    header & {
+        @include link-color($header-link);
+    }
+
+    main & {
+        @include link-color-outline($main-link);
+    }
+
+    footer & {
+        @include link-color($footer-link);
+    }
+}

@@ -1,0 +1,25 @@
+@mixin link-color-outline($color) {
+    margin: .5rem 1rem;
+    padding: .5rem 1rem;
+    border: 1px solid $color;
+    border-radius: 3px;
+    color: $color;
+    &:hover {
+        color: set-link-hover-color($color);
+        background: $color;
+        box-shadow: 0 5px 10px rgba(darken($color, 50%), 0.2);
+    }
+}
+
+
+@mixin link-color($color) {
+    margin: .5rem 1rem;
+    padding: .5rem 1rem;
+    border-radius: 3px;
+    color: set-link-hover-color($color);
+    background: $color;
+    box-shadow: 0 5px 10px rgba(darken($color, 50%), 0.2);
+    &:hover {
+        background: set-link-hover-background($color);
+    }
+}

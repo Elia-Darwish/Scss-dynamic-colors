@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header, main, footer {
+  height: 100px;
+  padding: 2rem; }
+
+a {
+  text-decoration: none;
+  font-size: 1.2rem; }
+  header a {
+    margin: .5rem 1rem;
+    padding: .5rem 1rem;
+    border-radius: 3px;
+    color: white;
+    background: salmon;
+    box-shadow: 0 5px 10px rgba(105, 14, 4, 0.2); }
+    header a:hover {
+      background: #f7270f; }
+  main a {
+    margin: .5rem 1rem;
+    padding: .5rem 1rem;
+    border: 1px solid dodgerblue;
+    border-radius: 3px;
+    color: dodgerblue; }
+    main a:hover {
+      color: white;
+      background: dodgerblue;
+      box-shadow: 0 5px 10px rgba(0, 15, 30, 0.2); }
+  footer a {
+    margin: .5rem 1rem;
+    padding: .5rem 1rem;
+    border-radius: 3px;
+    color: #1c8282;
+    background: PaleTurquoise;
+    box-shadow: 0 5px 10px rgba(28, 130, 130, 0.2); }
+    footer a:hover {
+      background: #c4f2f2; }
